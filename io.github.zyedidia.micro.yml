@@ -33,8 +33,8 @@ modules:
       - -Dfishcompletiondir=no
     sources:
       - type: archive
-        url: https://github.com/bugaevc/wl-clipboard/archive/v2.1.0.tar.gz
-        sha256: 72dab9a7d3835c76d6ff2089f15ffec9e064a321e5f3cbbe961a8fa81aff5573
+        url: https://github.com/bugaevc/wl-clipboard/archive/v2.2.0.tar.gz
+        sha256: 414005cfa229d0e54f89a0d9a8473938e4c29adc21a9e556847a4d44ad508874
         x-checker-data:
           type: anitya
           project-id: 49082
@@ -76,14 +76,13 @@ modules:
       - install -D assets/packaging/micro.desktop -t /app/share/applications
     sources:
       - type: git
-        url: 'https://github.com/zyedidia/micro.git'
-        tag: 'v2.0.11'
-        commit: '225927b9a25f0d50ea63ea18bc7bb68e404c0cfd'
-    
+        url: https://github.com/zyedidia/micro.git
+        tag: v2.0.11
+        commit: 225927b9a25f0d50ea63ea18bc7bb68e404c0cfd
       - type: file
         path: modules.txt
         dest: vendor
-      - 'go.mod.yml'
+      - go.mod.yml
 
       # Patch to appdata file. Done in https://github.com/zyedidia/micro/pull/2793
       - type: patch

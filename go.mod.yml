@@ -28,6 +28,12 @@
   sha256: ad8550bed3c4a94bbef57b9fc5bb15806eaceda00925716404320580d60e2f7d
 
 - type: archive
+  url: https://proxy.golang.org/github.com/creack/pty/@v/v1.1.18.zip
+  strip-components: 3
+  dest: vendor/github.com/creack/pty
+  sha256: 7dcada7782e04f0d4b47d50d4ef35f36f2c80f909231019149480429bdb176e5
+
+- type: archive
   url: https://proxy.golang.org/github.com/davecgh/go-spew/@v/v1.1.1.zip
   strip-components: 3
   dest: vendor/github.com/davecgh/go-spew
@@ -136,16 +142,22 @@
   sha256: 0a01f54bfd575531195a5c039811f9d6846978c0020c3ea121e5ac23893aa3cc
 
 - type: archive
+  url: https://proxy.golang.org/github.com/yuin/goldmark/@v/v1.4.13.zip
+  strip-components: 3
+  dest: vendor/github.com/yuin/goldmark
+  sha256: bb41a602b174345fda392c8ad83fcc93217c285c763699677630be90feb7a5e3
+
+- type: archive
   url: https://proxy.golang.org/github.com/yuin/gopher-lua/@v/v0.0.0-20191220021717-ab39c6098bdb.zip
   strip-components: 3
   dest: vendor/github.com/yuin/gopher-lua
   sha256: 1c3be0284f5e0ee8cc697e01937e381273e9e76e4bdcf60dca2cacc0562d880d
 
 - type: archive
-  url: https://proxy.golang.org/github.com/zyedidia/clipper/@v/v0.1.0.zip
+  url: https://proxy.golang.org/github.com/zyedidia/clipper/@v/v0.1.1.zip
   strip-components: 3
   dest: vendor/github.com/zyedidia/clipper
-  sha256: dcd801ad065aec45f5950113f4d1c441cc616eca6e25ca67e3a2775c96d86c00
+  sha256: f2972cf4cc5df8b703cdd90556d0136933f86b03fb1614fc4616eeb14b6d821f
 
 - type: archive
   url: https://proxy.golang.org/github.com/zyedidia/glob/@v/v0.0.0-20170209203856-dd4023a66dc3.zip
@@ -166,40 +178,70 @@
   sha256: fbb8b497bdd435f4b207aff57ce6c71dce111465401386aa4c23379d08bab2ef
 
 - type: archive
-  url: https://proxy.golang.org/github.com/zyedidia/pty/@v/v1.1.20.zip
-  strip-components: 3
-  dest: vendor/github.com/zyedidia/pty
-  sha256: f2234840475faeef6319fb8c1a763e46f8b282e9aaeec5fcab0bcc053a165ff6
-
-- type: archive
-  url: https://proxy.golang.org/github.com/zyedidia/tcell/v2/@v/v2.0.9.zip
+  url: https://proxy.golang.org/github.com/zyedidia/tcell/v2/@v/v2.0.10-0.20230831153116-061c5b2c7260.zip
   strip-components: 4
   dest: vendor/github.com/zyedidia/tcell/v2
-  sha256: 14c4f20bc8e74e772590f5482b68d779614bc5548f66fe22246620945b410e9e
+  sha256: fbb0ae751148c1f91ca1f488ac033e41ea990982d335320add142b69d7333109
 
 - type: archive
-  url: https://proxy.golang.org/github.com/zyedidia/terminal/@v/v0.0.0-20180726154117-533c623e2415.zip
+  url: https://proxy.golang.org/github.com/zyedidia/terminal/@v/v0.0.0-20230315200948-4b3bcf6dddef.zip
   strip-components: 3
   dest: vendor/github.com/zyedidia/terminal
-  sha256: 2aaa2f82e57b8efd081f99f47ee925c07ec548fcedd53ca863e7bb14c8af94d5
+  sha256: 4cea68adcdfd88b1b9cb5523d800d8f43c9803947f2281f09e1bbf0c07d24365
 
 - type: archive
-  url: https://proxy.golang.org/golang.org/x/sys/@v/v0.0.0-20191026070338-33540a1f6037.zip
+  url: https://proxy.golang.org/golang.org/x/crypto/@v/v0.0.0-20210921155107-089bfa567519.zip
+  strip-components: 3
+  dest: vendor/golang.org/x/crypto
+  sha256: eb2426a7891915213cc5da1da7b6fc6e9e2cf253d518d8e169e038e287f414e3
+
+- type: archive
+  url: https://proxy.golang.org/golang.org/x/mod/@v/v0.6.0-dev.0.20220419223038-86c51ed26bb4.zip
+  strip-components: 3
+  dest: vendor/golang.org/x/mod
+  sha256: 2b7471ed34a349f91055527c5328acd40e9aba006b644e51d40a8627efa76a92
+
+- type: archive
+  url: https://proxy.golang.org/golang.org/x/net/@v/v0.0.0-20220722155237-a158d28d115b.zip
+  strip-components: 3
+  dest: vendor/golang.org/x/net
+  sha256: 1decf7a324a0916bc66304da1b68a834ce679379422de3a2855f3031f6dc39bd
+
+- type: archive
+  url: https://proxy.golang.org/golang.org/x/sync/@v/v0.0.0-20220722155255-886fb9371eb4.zip
+  strip-components: 3
+  dest: vendor/golang.org/x/sync
+  sha256: 39d2431ae1db11be34b4012b719e7bcec1572006a122d44509da038a5b498ff1
+
+- type: archive
+  url: https://proxy.golang.org/golang.org/x/sys/@v/v0.0.0-20220722155257-8c9f86f7a55f.zip
   strip-components: 3
   dest: vendor/golang.org/x/sys
-  sha256: cd0ef9c0a4e8a9ee9269c4787eeefa4e1225ac4367bb444ffa8d53a3ae98879e
+  sha256: f4480597a942160a2aaeb761d41ee67f610287785c263f1df253a3e157c98594
 
 - type: archive
-  url: https://proxy.golang.org/golang.org/x/text/@v/v0.3.2.zip
+  url: https://proxy.golang.org/golang.org/x/term/@v/v0.0.0-20210927222741-03fcf44c2211.zip
+  strip-components: 3
+  dest: vendor/golang.org/x/term
+  sha256: 3adf713afa49fe26580ffe4adb1f4fb2f4921c945301aa5a9fb6d34031fa30cd
+
+- type: archive
+  url: https://proxy.golang.org/golang.org/x/text/@v/v0.3.8.zip
   strip-components: 3
   dest: vendor/golang.org/x/text
-  sha256: f755c0e7f4693f170e2f03c161f500b33f82accb8184a38dcfda63fed883f13c
+  sha256: 66af186502189c9365fcf0ce1746e2ae96c0f7ec38c78adda3a4e9f5ffce02cd
 
 - type: archive
-  url: https://proxy.golang.org/golang.org/x/tools/@v/v0.0.0-20180917221912-90fa682c2a6e.zip
+  url: https://proxy.golang.org/golang.org/x/tools/@v/v0.1.12.zip
   strip-components: 3
   dest: vendor/golang.org/x/tools
-  sha256: 6673fe06662fcbee5f246f12af8ed860328bf08fd016fd490987cd76acb1b4fe
+  sha256: 4b122e0e4703bc4014cb1cf8c014fcf93ea7d72f01da79499365346f54cbb851
+
+- type: archive
+  url: https://proxy.golang.org/golang.org/x/xerrors/@v/v0.0.0-20190717185122-a985d3407aa7.zip
+  strip-components: 3
+  dest: vendor/golang.org/x/xerrors
+  sha256: c4e9f063cfed546c90f00a9657deac4f915a8994f8cbe6dbd3f18e79eb8302cf
 
 - type: archive
   url: https://proxy.golang.org/gopkg.in/check.v1/@v/v1.0.0-20190902080502-41f04d3bba15.zip

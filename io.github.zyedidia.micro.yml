@@ -1,7 +1,7 @@
 app-id: io.github.zyedidia.micro
 
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.golang
@@ -69,24 +69,20 @@ modules:
     buildsystem: simple
     build-commands:
       - make build
-      - install -D micro -t /app/bin
+      - install -Dm755 micro -t /app/bin
 
-      - install -D data/io.github.zyedidia.micro.metainfo.xml -t /app/share/metainfo
-      - install -D assets/micro-logo-mark.svg /app/share/icons/hicolor/scalable/apps/micro.svg
-      - install -D assets/packaging/micro.desktop -t /app/share/applications
+      - install -Dm644 data/io.github.zyedidia.micro.metainfo.xml -t /app/share/metainfo
+      - install -Dm644 assets/micro-logo-mark.svg /app/share/icons/hicolor/scalable/apps/micro.svg
+      - install -Dm644 assets/packaging/micro.desktop -t /app/share/applications
     sources:
       - type: git
         url: https://github.com/zyedidia/micro.git
-        tag: v2.0.11
-        commit: 225927b9a25f0d50ea63ea18bc7bb68e404c0cfd
+        commit: c2cebaa3d19fbdd924d411ee393c03e3e7804435
+        tag: v2.0.12
       - type: file
         path: modules.txt
         dest: vendor
       - go.mod.yml
-
-      # Patch to appdata file. Done in https://github.com/zyedidia/micro/pull/2793
-      - type: patch
-        path: metainfo.patch
 
     build-options:
       append-path: /usr/lib/sdk/golang/bin

@@ -178,10 +178,10 @@
   sha256: fbb8b497bdd435f4b207aff57ce6c71dce111465401386aa4c23379d08bab2ef
 
 - type: archive
-  url: https://proxy.golang.org/github.com/zyedidia/tcell/v2/@v/v2.0.10-0.20230831153116-061c5b2c7260.zip
+  url: https://proxy.golang.org/github.com/zyedidia/tcell/v2/@v/v2.0.10.zip
   strip-components: 4
   dest: vendor/github.com/zyedidia/tcell/v2
-  sha256: fbb0ae751148c1f91ca1f488ac033e41ea990982d335320add142b69d7333109
+  sha256: aea0f6e01ed0ff0ccd4078d98eff1a3fefd252e3557c95cf04989d7bd0870b3e
 
 - type: archive
   url: https://proxy.golang.org/github.com/zyedidia/terminal/@v/v0.0.0-20230315200948-4b3bcf6dddef.zip

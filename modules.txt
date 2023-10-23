@@ -56,7 +56,7 @@ github.com/zyedidia/glob
 github.com/zyedidia/json5
 # github.com/zyedidia/poller v1.0.1
 github.com/zyedidia/poller
-# github.com/zyedidia/tcell/v2 v2.0.10-0.20230831153116-061c5b2c7260
+# github.com/zyedidia/tcell/v2 v2.0.10
 ## explicit
 github.com/zyedidia/tcell/v2
 github.com/zyedidia/tcell/v2/terminfo

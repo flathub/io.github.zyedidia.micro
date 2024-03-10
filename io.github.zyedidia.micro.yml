@@ -79,6 +79,10 @@ modules:
         url: https://github.com/zyedidia/micro.git
         commit: 68d88b571de6dca9fb8f03e2a3caafa2287c38d4
         tag: v2.0.13
+      - type: patch
+        path: appdata.patch
+      - type: patch
+        path: desktop.patch
       - type: file
         path: modules.txt
         dest: vendor

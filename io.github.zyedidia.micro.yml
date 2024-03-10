@@ -81,6 +81,8 @@ modules:
         tag: v2.0.13
       - type: patch
         path: appdata.patch
+      - type: patch
+        path: desktop.patch
       - type: file
         path: modules.txt
         dest: vendor

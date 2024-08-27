@@ -75,14 +75,11 @@ modules:
       - install -Dm644 assets/micro-logo-mark.svg /app/share/icons/hicolor/scalable/apps/micro.svg
       - install -Dm644 assets/packaging/micro.desktop -t /app/share/applications
     sources:
+      # has to be a git source, because micro uses git tag to determene its version 
       - type: git
         url: https://github.com/zyedidia/micro.git
-        commit: 68d88b571de6dca9fb8f03e2a3caafa2287c38d4
-        tag: v2.0.13
-      - type: patch
-        path: appdata.patch
-      - type: patch
-        path: desktop.patch
+        commit: 04c577049ca898f097cd6a2dae69af0b4d4493e1
+        tag: v2.0.14
       - type: file
         path: modules.txt
         dest: vendor

@@ -1,7 +1,7 @@
 app-id: io.github.zyedidia.micro
 
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.golang
@@ -78,8 +78,8 @@ modules:
       # has to be a git source, because micro uses git tag to determene its version 
       - type: git
         url: https://github.com/zyedidia/micro.git
-        commit: 04c577049ca898f097cd6a2dae69af0b4d4493e1
-        tag: v2.0.14
+        tag: v2.0.15
+        commit: 6a62575bcfdf4965f187eedafceb3400316e612b
       - type: file
         path: modules.txt
         dest: vendor
